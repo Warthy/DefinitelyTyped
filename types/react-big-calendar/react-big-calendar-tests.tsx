@@ -410,10 +410,10 @@ function Event(props: EventProps<CalendarEvent>) {
 }
 
 function EventWrapper(props: EventWrapperProps<CalendarEvent>) {
-    const { continuesEarlier, event, label, accessors = {}, style } = props;
+    const { continuesPrior, event, label, accessors = {}, style } = props;
     return (
         <div style={style}>
-            <div>{continuesEarlier}-{label}-{accessors.title && event && accessors.title(event)}</div>
+            <div>{continuesPrior}-{label}-{accessors.title && event && accessors.title(event)}</div>
         </div>
     );
 }
