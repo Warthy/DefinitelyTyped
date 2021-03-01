@@ -242,8 +242,8 @@ export interface EventWrapperProps<TEvent extends object = Event> {
     };
     selected: boolean;
     label: string;
-    continuesEarlier: boolean;
-    continuesLater: boolean;
+    continuesPrior: boolean;
+    continuesAfter: boolean;
 }
 
 export interface Messages {
